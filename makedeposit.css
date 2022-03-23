@@ -18,6 +18,12 @@ body {
     padding: 40px 30px;
 }
 
+@media screen and (max-width: 320px) {
+    .main-wrapper {
+        padding: 20px 10px;
+    }
+}
+
 .header-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -26,9 +32,15 @@ body {
     margin: 0 0 40px 0;
 }
 
+@media screen and (max-width: 320px) {
+    .header-wrapper {
+        gap: 22%;
+    }
+}
+
 @media screen and (min-width: 601px) {
     .header-wrapper {
-        gap: 40%;
+        gap: 38%;
     }
 }
 
@@ -38,6 +50,13 @@ body {
     line-height: 21px;
     font-weight: 400;
     opacity: 1;
+}
+
+@media screen and (max-width: 320px) {
+    .header-wrapper img {
+        height: 16px;
+        width: 13px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -50,8 +69,15 @@ body {
 
 .select-amount {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 29px;
+}
+
+@media screen and (max-width: 320px) {
+    .select-amount {
+        font-size: 21px;
+        line-height: 21px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -69,9 +95,21 @@ body {
     margin: 0 0 100px 0;
 }
 
+@media screen and (max-width: 320px) {
+    .deposit-section {
+        margin: 0 0 80px 0;
+    }
+}
+
 
 form {
     margin: 25px;
+}
+
+@media screen and (max-width: 320px) {
+    form {
+        margin: 15px 10px 25px 10px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -100,6 +138,14 @@ form {
     font-weight: 700;
 }
 
+@media screen and (max-width: 320px) {
+    #amount {
+        font-size: 15px;
+        padding: 0 12px;
+        height: 40px;
+    }
+}
+
 @media screen and (min-width: 601px) {
     #amount {
         height: 48px;
@@ -112,6 +158,12 @@ form {
     font-weight: 500;
     line-height: 17px;
     color: rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 320px) {
+    #amount::placeholder {
+        font-size: 13px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -135,12 +187,18 @@ form {
     position: relative;
 }
 
+@media screen and (max-width: 320px) {
+    .quick-amount {
+        font-size: 15px;
+        line-height: 16px;
+        margin: 40px 0 15px 0;
+    }
+}
+
 @media screen and (min-width: 601px) {
     .quick-amount {
         font-size: 18px;
         line-height: 18px;
-        margin: 45px 0 15px 0;
-        position: relative;
     }
 }
 
@@ -159,6 +217,12 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
+}
+
+@media screen and (max-width: 320px) {
+    .button {
+        grid-gap: 30px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -181,6 +245,14 @@ form {
     padding: 10px 15px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 320px) {
+    .button .btn {
+        font-size: 15px;
+        line-height: 15.45px;
+        padding: 10px 15px;
+    }
 }
 
 @media screen and (min-width: 601px) {
@@ -213,6 +285,14 @@ form {
     height: 60px;
     border: 1px solid transparent;
     cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+    .make-deposit {
+        font-size: 15px;
+        line-height: 21px;
+        height: 52px;
+    }
 }
 
 @media screen and (min-width: 601px) {
