@@ -15,7 +15,6 @@ body {
 .main-wrapper {
     margin: auto;
     width: 100%;
-    
     padding: 40px 30px;
 }
 
@@ -27,18 +26,39 @@ body {
     margin: 0 0 40px 0;
 }
 
+@media screen and (min-width: 601px) {
+    .header-wrapper {
+        gap: 40%;
+    }
+}
+
 .header-wrapper img {
-    height: 28px;
-    width: 28px;
-    line-height: 28px;
+    height: 18px;
+    width: 14px;
+    line-height: 21px;
     font-weight: 400;
-    opacity: .7;
+    opacity: 1;
+}
+
+@media screen and (min-width: 601px) {
+    .header-wrapper img {
+        height: 18px;
+        width: 16px;
+        line-height: 21px;
+    }
 }
 
 .select-amount {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 29px;
+}
+
+@media screen and (min-width: 601px) {
+    .select-amount {
+        font-size: 24px;
+        line-height: 29px;
+    }
 }
 
 
@@ -49,8 +69,15 @@ body {
     margin: 0 0 100px 0;
 }
 
+
 form {
     margin: 25px;
+}
+
+@media screen and (min-width: 601px) {
+    form {
+        margin: 30px 25px 35px 25px;
+    }
 }
 
 #err {
@@ -73,6 +100,13 @@ form {
     font-weight: 700;
 }
 
+@media screen and (min-width: 601px) {
+    #amount {
+        height: 48px;
+        font-size: 18px;
+    }
+}
+
 #amount::placeholder {
     font-size: 14px;
     font-weight: 500;
@@ -80,11 +114,16 @@ form {
     color: rgba(0, 0, 0, 0.12);
 }
 
-#amount:focus {
-    border-color: #000;
-    outline: none;
+@media screen and (min-width: 601px) {
+    #amount::placeholder {
+        font-size: 16px;
+    }
 }
 
+#amount:focus {
+    border-color: #82489C;
+    outline: none;
+}
 
 .quick-amount {
     font-family: 'Public Sans', sans-serif;
@@ -94,6 +133,15 @@ form {
     color: rgba(0, 0, 0, 0.4);
     margin: 45px 0 15px 0;
     position: relative;
+}
+
+@media screen and (min-width: 601px) {
+    .quick-amount {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 45px 0 15px 0;
+        position: relative;
+    }
 }
 
 .quick-amount::after {
@@ -113,6 +161,12 @@ form {
     grid-gap: 25px;
 }
 
+@media screen and (min-width: 601px) {
+    .button {
+        grid-gap: 50px;
+    }
+}
+
 .button .btn {
     background-color: #fff;
     border: 1px solid transparent;
@@ -129,12 +183,19 @@ form {
     transition: all 0.5s ease-in-out;
 }
 
+@media screen and (min-width: 601px) {
+    .button .btn {
+        font-size: 18px;
+        line-height: 18.45px;
+        padding: 12px 15px;
+    }
+}
+
 .button .btn:hover,
 .button .btn:active {
     background-color: #82489C;
     color: #fff;
 }
-
 
 
 .main-footer {
@@ -152,6 +213,15 @@ form {
     height: 60px;
     border: 1px solid transparent;
     cursor: pointer;
+}
+
+@media screen and (min-width: 601px) {
+    .make-deposit {
+        font-size: 18px;
+        line-height: 24px;
+        height: 64px;
+    }
+    
 }
 
 .make-deposit:hover {
