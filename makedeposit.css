@@ -45,8 +45,8 @@ body {
 }
 
 .header-wrapper img {
-    height: 28px;
-    width: 28px;
+    height: 32px;
+    width: 32px;
     line-height: 21px;
     font-weight: 400;
     opacity: 1;
@@ -61,8 +61,8 @@ body {
 
 @media screen and (min-width: 601px) {
     .header-wrapper img {
-        height: 18px;
-        width: 16px;
+        height: 34px;
+        width: 34px;
         line-height: 21px;
     }
 }
